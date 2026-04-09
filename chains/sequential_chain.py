@@ -35,7 +35,7 @@ chain = (
     prompt1
     | model
     | parser
-    | (lambda x: {"text": x})
+    #| (lambda x: {"text": x})
     | prompt2
     | model
     | parser
