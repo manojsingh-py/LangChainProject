@@ -8,7 +8,7 @@ llm = HuggingFaceEndpoint(
     task='text-generation'
 )
 model = ChatHuggingFace(llm=llm)
-result = model.invoke('What is the capital of India')
+result = model.invoke(' API key.')
 
 print(result.content)
 

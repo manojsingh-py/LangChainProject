@@ -28,10 +28,10 @@ parser = StructuredOutputParser.from_response_schemas(schema)
 # Prompt template
 template = PromptTemplate(
     template="""
-Write 3 facts about {topic}
-
-{format_instructions}
-""",
+                Write 3 facts about {topic}
+                
+                {format_instructions}
+            """,
     input_variables=['topic'],
     partial_variables={
         'format_instructions': parser.get_format_instructions()
